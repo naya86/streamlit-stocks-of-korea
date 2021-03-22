@@ -42,11 +42,11 @@ def run_search():
         sel_df_re.rename(columns={'Date':'ds', '종가':'y'},inplace=True)
         # st.write(sel_df_re)
 
-        if st.button('추가예측') :
+        if st.button('주가예측') :
             m = Prophet()
             m.fit(sel_df_re)
 
-            future = m.make_future_dataframe(periods= 30)
+            future = m.make_future_dataframe(periods= 180)
             forecast = m.predict(future)
 
             st.dataframe(forecast)

@@ -26,8 +26,8 @@ def main() :
     
     if choice == 'HOME' :
         st.header('주가 예측 앱')
-        st.write('KOSPI , KOSDAQ 시세 및 종목 분석 예측')
-        st.write('2000년 이후')
+        st.write('한국 , 미국 증시 시세')
+        st.write('KOSPI, KOSDAQ 종목 시세 및 예측')
         st.header('''
     
                 ''')
