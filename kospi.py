@@ -26,6 +26,7 @@ def run_kospi() :
         
         
         st.write(df_kospi)
+        st.write(df_kospi.index)
         
         btn = st.button('차트 보기')
         
